@@ -1,0 +1,22 @@
+function init(self)
+	self.spawn_timer = 0
+	self.spawn_delay = 1.5
+end
+
+function update(self, dt)
+	self.spawn_timer = self.spawn_timer + dt
+
+	if self.spawn_timer >= self.spawn_delay then
+		self.spawn_timer = 0
+
+		local x = math.random(50, 670)
+		local y = 1300
+		local pos = vmath.vector3(x, y, 0)
+
+		if math.random(1,2) == 1 then
+			factory.create("#poopfactory", pos)
+		else
+			factory.create("#gearsfactory", pos)
+		end
+	end
+end

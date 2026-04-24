@@ -1,0 +1,38 @@
+script: "/main/main_menu/main_menu.gui_script"
+fonts {
+  name: "pixel"
+  font: "/assets/pixel.font"
+}
+nodes {
+  position {
+    x: 460.0
+    y: 411.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  id: "start"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "Start"
+  font: "pixel"
+  id: "text"
+  parent: "start"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

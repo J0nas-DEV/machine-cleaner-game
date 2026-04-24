@@ -1,0 +1,26 @@
+name: "proxy"
+instances {
+  id: "game_manager"
+  prototype: "/main/game_manager.go"
+}
+scale_along_z: 0
+embedded_instances {
+  id: "controller"
+  data: "components {\n"
+  "  id: \"controller\"\n"
+  "  component: \"/main/controller.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"stage1\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/main/stage1.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"main_menu\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/main/main_menu/main_menu.collection\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}

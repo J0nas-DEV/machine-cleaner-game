@@ -1,0 +1,26 @@
+script: "/assets/gui/player_gui.gui_script"
+fonts {
+  name: "pixel"
+  font: "/assets/pixel.font"
+}
+nodes {
+  position {
+    x: 88.0
+    y: 599.0
+  }
+  scale {
+    x: 2.0
+    y: 2.0
+  }
+  size {
+    x: 75.0
+    y: 25.0
+  }
+  type: TYPE_TEXT
+  text: "SCORE: 0"
+  font: "pixel"
+  id: "score_label"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

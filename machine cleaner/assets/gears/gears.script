@@ -1,0 +1,10 @@
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then
+		if message.enter then
+			if message.other_group == hash("default") then
+				msg.post("proxy:/game_manager#game_manager", "add_score", { value = 1 })
+				go.delete()
+			end
+		end
+	end
+end

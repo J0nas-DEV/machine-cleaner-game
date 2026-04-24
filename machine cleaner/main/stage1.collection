@@ -1,0 +1,57 @@
+name: "stage1"
+instances {
+  id: "bin"
+  prototype: "/assets/bin/bin.go"
+  position {
+    x: 425.0
+    y: 41.0
+  }
+}
+instances {
+  id: "spawner"
+  prototype: "/assets/spawner.go"
+  position {
+    x: 456.0
+    y: 638.0
+  }
+}
+instances {
+  id: "deadend"
+  prototype: "/assets/deadend.go"
+  position {
+    x: 482.0
+    y: -32.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "camera"
+  data: "components {\n"
+  "  id: \"camera1\"\n"
+  "  component: \"/main/camera.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 1000.0\\n"
+  "orthographic_projection: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 479.0
+    y: 318.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "player_gui"
+  data: "components {\n"
+  "  id: \"player_gui\"\n"
+  "  component: \"/assets/gui/player_gui.gui\"\n"
+  "}\n"
+  ""
+}

@@ -1,0 +1,14 @@
+function init(self)
+	self.score = 0
+end
+
+local function add_score(self, value)
+	self.score = self.score + value
+	msg.post("stage1:/player_gui#player_gui", "update_score", { score = self.score })
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("add_score") then
+		add_score(self, message.value)
+	end
+end

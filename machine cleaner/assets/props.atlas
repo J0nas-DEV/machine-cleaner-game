@@ -1,0 +1,10 @@
+images {
+  image: "/assets/bin.png"
+}
+images {
+  image: "/assets/poop.png"
+}
+images {
+  image: "/assets/gears.png"
+}
+extrude_borders: 2

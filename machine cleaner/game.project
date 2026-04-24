@@ -1,5 +1,5 @@
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /main/proxy.collectionc
 
 [script]
 shared_state = 1
@@ -13,7 +13,7 @@ high_dpi = 1
 input_method = HiddenInputField
 
 [physics]
-gravity_y = -1000.0
+gravity_y = -200.0
 scale = 0.01
 
 [html5]
@@ -21,4 +21,8 @@ scale_mode = stretch
 
 [project]
 title = machine cleaner
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
 

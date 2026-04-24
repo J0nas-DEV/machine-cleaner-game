@@ -1,0 +1,12 @@
+function init(self)
+	self.score = 0
+	msg.post(".", "acquire_input_focus")
+end
+
+function on_message(self, message_id, message)
+	if message_id == hash("update_score") then
+		self.score = message.score
+		self.score_label = gui.get_node("score_label")
+		gui.set_text(self.score_label, "Score: " .. self.score)
+	end
+end
