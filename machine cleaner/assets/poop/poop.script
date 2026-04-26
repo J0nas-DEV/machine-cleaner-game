@@ -3,6 +3,7 @@ function on_message(self, message_id, message, sender)
 		if message.enter then
 			if message.other_group == hash("default") then
 				msg.post("proxy:/game_manager#game_manager", "add_score", { value = -1 })
+				msg.post("stage1:/bin#bin", "fart")
 				go.delete()
 			end
 		end

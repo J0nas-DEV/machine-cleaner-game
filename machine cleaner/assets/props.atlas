@@ -7,4 +7,13 @@ images {
 images {
   image: "/assets/gears.png"
 }
+images {
+  image: "/assets/background.jpg"
+}
+images {
+  image: "/assets/old building.png"
+}
+images {
+  image: "/assets/orage effect.png"
+}
 extrude_borders: 2

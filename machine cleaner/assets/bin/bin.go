@@ -2,6 +2,14 @@ components {
   id: "bin"
   component: "/assets/bin/bin.script"
 }
+components {
+  id: "muzzle"
+  component: "/assets/bin/muzzle_wheel.particlefx"
+  position {
+    x: -23.0
+    y: -23.0
+  }
+}
 embedded_components {
   id: "sprite"
   type: "sprite"
@@ -23,6 +31,7 @@ embedded_components {
   "group: \"default\"\n"
   "mask: \"poop\"\n"
   "mask: \"gears\"\n"
+  "mask: \"building\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
@@ -38,5 +47,24 @@ embedded_components {
   "  data: 22.5\n"
   "  data: 32.0\n"
   "}\n"
+  ""
+}
+embedded_components {
+  id: "rail_sound"
+  type: "sound"
+  data: "sound: \"/assets/bin/train_wheels.ogg\"\n"
+  "looping: 1\n"
+  ""
+}
+embedded_components {
+  id: "fart"
+  type: "sound"
+  data: "sound: \"/assets/fart.ogg\"\n"
+  ""
+}
+embedded_components {
+  id: "metal"
+  type: "sound"
+  data: "sound: \"/assets/metal.ogg\"\n"
   ""
 }
