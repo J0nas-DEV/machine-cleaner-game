@@ -1,6 +1,6 @@
 # MACHINE CLEANER GAME
 
-This project was created for Gamejam.js 2026.
+This project was created for Gamedev.js a Gamejam in 2026.
 
 this was created using defold game engine, and lua for scripting language for game logics
 
